@@ -4,17 +4,7 @@ import chalk from 'chalk';
 import gradient from 'gradient-string'
 
 
-console.log("                                                                        ");
-console.log("                                                                        ");
-
-console.log(gradient.rainbow("      _         _         _         _         _         _ "));
-console.log(gradient.rainbow("    _( )__    _( )__    _( )__    _( )__    _( )__    _( )__ "));
-console.log(gradient.rainbow("  _|     _| _|     _| _|     _| _|     _| _|     _| _|     _|"));
-console.log(gradient.rainbow(" (_ M _ (_ (_ E _ (_ (_ M _ (_ (_ O _ (_ (_ R _ (_ (_ Y _ (_ "));
-console.log(gradient.rainbow("   |_( )__|  |_( )__|  |_( )__|  |_( )__|  |_( )__|  |_( )__|"));
-
-console.log("                                                                        ");
-console.log("                                                                    ");                                                                  
+                                                                
 
 /* 
       _         _         _         _         _         _    
@@ -96,7 +86,8 @@ console.log("  |_   \  /   _|  ");
 console.log("    |   \/   |    ");
 console.log("   _| |_\/_| |_   ");
 console.log("  |_____||_____|  ");
-
+console.log("");
+console.log("");
 /* 
    ____    ____   
   |_   \  /   _|  
@@ -134,6 +125,9 @@ gradient.rainbow("|  |      |  |   \       /  |  |      |  |   '. \_/``.'   |  |
 console.log(
 gradient.rainbow("'--'      '--'    `'-..-'   '--'      '--'     '-----'     ''-'   `'-'     `-..-'        "));
 
+
+console.log("");
+console.log("");
 /* 
 
 ,---.    ,---.     .-''-.   ,---.    ,---.     ,-----.     .-------.        ____     __  
@@ -147,4 +141,6 @@ gradient.rainbow("'--'      '--'    `'-..-'   '--'      '--'     '-----'     ''-
 '--'      '--'    `'-..-'   '--'      '--'     '-----'     ''-'   `'-'     `-..-'        
                                                                                          
  */
+
+
 
