@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "terminal_memory",
+  "version": "1.0.0",
+  "description": "Mal schauen was dabei rum kommt .... :-)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolaZapp/terminal_Memory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolaZapp/terminal_Memory/issues"
+  },
+  "homepage": "https://github.com/CarolaZapp/terminal_Memory#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "chalk-animation": "^2.0.2",
+    "cli-spinners": "^2.7.0",
+    "gradient-string": "^2.0.1",
+    "prompt-sync": "^4.2.0"
+  }
+}
