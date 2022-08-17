@@ -168,3 +168,50 @@ gradient.rainbow("███████"),gradient.rainbow("   █████�
 
 console.log("");
 console.log("");
+
+
+console.log(gradient.rainbow("╔═══╗═══╗ "));
+console.log(gradient.rainbow("║═╗ ╚╗  ║ "));
+console.log(gradient.rainbow("║ ╚╗ ╚╗ ║ "));
+console.log(gradient.rainbow("║  ╚╗ ╚╗║ "));
+console.log(gradient.rainbow("║   ╚╗ ╚║ "));
+console.log(gradient.rainbow("╚════╝══╝ "));
+
+
+
+console.log("");
+console.log("");
+console.log(gradient.rainbow("╔═══════╗ "));
+console.log(gradient.rainbow("║ (_)   ║ "));
+console.log(gradient.rainbow("║    (_)║ "));
+console.log(gradient.rainbow("║(_)    ║ "));
+console.log(gradient.rainbow("║   (_) ║ "));
+console.log(gradient.rainbow("╚═══════╝ "));
+
+
+console.log("");
+console.log(""); 
+
+console.log(gradient.rainbow("╔═══════╗ "));
+console.log(gradient.rainbow("║══║════║ "));
+console.log(gradient.rainbow("║════║══║ "));
+console.log(gradient.rainbow("║═║═════║ "));
+console.log(gradient.rainbow("║═══║═══║ "));
+console.log(gradient.rainbow("╚═══════╝ "));
+
+let duck = gradient.rainbow.multiline([
+  "    __",
+  "  <(o )___",
+  "   (  _> /",
+  "    `---'",
+].join('\n'));
+console.log(duck);
+console.log
+
+let duck2 = gradient.rainbow.multiline([
+  "    __",
+  "  <(o )___",
+  "   (  _> /",
+  "~~~~~~~~~~~~~",
+].join('\n'));
+console.log(duck2);
