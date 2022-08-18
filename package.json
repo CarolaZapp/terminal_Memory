@@ -22,6 +22,7 @@
     "chalk": "^5.0.1",
     "chalk-animation": "^2.0.2",
     "cli-spinners": "^2.7.0",
+    "enquirer": "^2.3.6",
     "gradient-string": "^2.0.1",
     "prompt-sync": "^4.2.0"
   }

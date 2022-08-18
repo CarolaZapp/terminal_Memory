@@ -215,3 +215,11 @@ let duck2 = gradient.rainbow.multiline([
   "~~~~~~~~~~~~~",
 ].join('\n'));
 console.log(duck2);
+
+
+console.log();
+console.log();
+// FUNKTIONIERT NICHT für hintereinander....
+// const arrayDuck2 = [duck2, duck2, duck2];
+// console.log(arrayDuck2);
+
