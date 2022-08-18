@@ -60,9 +60,17 @@ console.log(newArray.length); */
     console.log("   ", neueMischung().join(" "));
     console.log("");
     console.log("");
+console.clear()
 
+    const coverArray2= ["███","███","███","███","███","███","███","███","███","███","███","███","███","███","███","███","███"];
 
+    console.log("");
+    console.log("");
+/* console.log(gradient.rainbow(coverArray));  */
 
+      console.log(gradient.rainbow(coverArray2.join("")));
+      console.log("");
+      console.log("");
 
 // Auswahl aus new Array
 // max 2x
@@ -92,7 +100,7 @@ let choice2 = newArray[3]; */
     }
 /* console.log("2" , choiceArray); */
 /* console.log(choiceArray.join(" "))  */
-console.log("Your first choice:", choiceArray[0], "  Your second choice:", choiceArray[1]); 
+console.log(" Your first choice:", choiceArray[0], "  Your second choice:", choiceArray[1]); 
 /* console.log("Your second choice:", choiceArray[1]); */
 /*      if ( choiceArray[0] === choiceArray[1]){
         choiceArray.splice(0,2)
@@ -101,7 +109,7 @@ console.log("Your first choice:", choiceArray[0], "  Your second choice:", choic
 
       if ( choiceArray[0] === choiceArray[1]){
         console.log(" ");
-      console.log(gradient.rainbow("             Great! You found a match!              "));
+      console.log(gradient.rainbow("           Great! You found a match!              "));
       console.log(" "); 
 /*       console.log(choiceArray);
       console.log("ID" , chosenCardID); */
