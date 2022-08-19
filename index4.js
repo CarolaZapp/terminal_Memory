@@ -161,17 +161,17 @@ console.log("");
     function check(){
     let choiceArray = [];
       if (choiceArray.length === 0){
-          return choiceArray.push(choiceA());
+          choiceArray.push(choiceA());
       }
       if (choiceArray.length === 1){
-          return choiceArray.push(choiceB());
+          choiceArray.push(choiceB());
       }
       console.log("Your first choice:", choiceArray[0], "  Your second choice:", choiceArray[1]); 
 
       if ( choiceArray[0] === choiceArray[1]){
       console.log(" ");
-      console.log(gradient.rainbow("           Great! You found a match!              "));
-      console.log(" "); 
+/*       console.log(gradient.rainbow("           Great! You found a match!              ")); */
+      return (gradient.rainbow("           Great! You found a match!              "));
       }
 // match anzeigen  
 // => noch offen
@@ -181,56 +181,53 @@ console.log("");
 
       else{
         console.log(" ");
-        console.log(gradient.rainbow("      Sorry you failed. Please try again...         "));
+/*         console.log(gradient.rainbow("      Sorry you failed. Please try again...         "));
+ */        return (gradient.rainbow("      Sorry you failed. Please try again...         "));
         console.log(" ");
         console.log(" ");
       }
     
   }
 
-/* check() */
+  check()
+
 
 // Weiterspielen
 
 function weiterSpielen(){
-  let neuR;
-  let neuR2;
-  let neuCheck;
-  let neuM;
+
   const weiter = prompt("Would you like to play another round? (y/n) " ).toLowerCase();
 console.log("");
 console.log("");
   if ( weiter === "y"){
-     neuR = choiceA();
-     neuR2 = choiceB();
-     neuCheck = check();
+      return true
   }
   if (weiter ==="n"){
     const neuMischen = prompt("Would you like to reshuffel? (y/n) " ).toLowerCase();
     console.log("");
     console.log("");
       if (neuMischen === "y")
-/*         neuM = neueMischung(); */
+      return true
       if (neuMischen === "n"){
     console.log(gradient.rainbow("What a pity!... 😦")); 
     console.log("");
     console.log("");
   }
-/* return weiterSpielen() */
+return weiterSpielen()
 }
 }
 
-weiterSpielen()
+/* weiterSpielen() */
 
 //  game
 
-/* function game(){
+function game(){
   let weiter
   do{
-    choiceA();
+    choiceA(); 
     choiceB();
     check(),
     weiter = weiterSpielen()
   }while (weiter)
 }
-game() */
+game()

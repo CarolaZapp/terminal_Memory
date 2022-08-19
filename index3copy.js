@@ -161,7 +161,7 @@ console.log();
     function check(num1, num2){
       if (choiceArray.length === 0){
             choiceArray.push(choice1);
-/*             chosenCardID.push(cardID) */
+
 
       if (choiceArray.length === 1){
         choiceArray.push(choice2);
