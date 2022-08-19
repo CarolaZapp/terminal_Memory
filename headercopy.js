@@ -83,7 +83,7 @@ console.log("");
 
 
   if ( question === "y"){
-    console.log(gradient.rainbow("Great! 😃")); 
+    console.log(gradient.rainbow("Great! 😃  Let's get started then...")); 
 console.log(" ");
 
   }

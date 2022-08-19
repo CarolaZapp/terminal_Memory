@@ -20,7 +20,8 @@ console.log(gradient.rainbow
   
   console.log(gradient.rainbow
     ("OO  "),"                                                           ",gradient.rainbow("  OO"));
-  
+  console.log(gradient.rainbow
+    ("OO  "),"                                                           ",gradient.rainbow("  OO"));  
   
   console.log
   (gradient.rainbow("OO  "),"╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗",gradient.rainbow("  OO" ) );
@@ -117,7 +118,6 @@ console.log("");
   return newArray
   }
 
-
 // Hidden Array to choose
     console.log("newArray_gemischt:", neueMischung().join(" "));
 
@@ -130,7 +130,7 @@ console.log("");
 function choiceA(){
   const choice01 = prompt(gradient.rainbow("Please do your first choice (number):   " ));
   console.log("");
-
+  console.log("");
   const choice1 = newArray[choice01];
   return choice1
 }
@@ -156,7 +156,6 @@ console.log("");
 
 //  Check
    
-
     function check(){
     let choiceArray = [];
       if (choiceArray.length === 0){
@@ -169,28 +168,32 @@ console.log("");
 
       if ( choiceArray[0] === choiceArray[1]){
       console.log(" ");
-      console.log(gradient.rainbow("           Great! You found a match!              "));
+      console.log(gradient.rainbow("✨   ✨   ✨ Great! You found a match! ✨   ✨   ✨"));
+      console.log("");
+      console.log("");
       }
+/*       return gradient.rainbow("           Great! You found a match!              ");
+      } */
 // match anzeigen  
 // => noch offen
-
 // match aus newArray entfernen
 // => noch offen
 
-      else{
-      console.log(" ");
-      console.log(gradient.rainbow("      Sorry you failed. Please try again...         "));
-     
-        console.log(" ");
-        console.log(" ");
+      else {
+      console.log("");
+      console.log(gradient.rainbow("      Sorry you failed. Please try again...         ")); 
+      console.log("");
+      console.log("");
+
+/*       return gradient.rainbow("      Sorry you failed. Please try again...         "); */
       }
-    
-  }
+/*       return check(); */
+    }
 
   check()
 
 
-// Weiterspielen
+// Weiterspielen - neue Runde 
 
 function weiterSpielen(){
 
@@ -198,34 +201,36 @@ function weiterSpielen(){
 console.log("");
 console.log("");
   if ( weiter === "y"){
-      return true
+      check();
+      weiterSpielen()
   }
   if (weiter ==="n"){
-    const neuMischen = prompt("Would you like to reshuffel? (y/n) " ).toLowerCase();
+    console.log(gradient.rainbow("What a pity!... 🙈 ")); 
     console.log("");
     console.log("");
-      if (neuMischen === "y")
-      return true
-      if (neuMischen === "n"){
-    console.log(gradient.rainbow("What a pity!... 😮")); 
-    console.log("");
-    console.log("");
+    neuesSpiel()
   }
 /* return weiterSpielen() */
 }
-}
-
 weiterSpielen()
 
-//  game
-
-/* function game(){
-  let weiter
-  do{
-    choiceA(); 
-    choiceB();
-    check(),
-    weiter = weiterSpielen()
-  }while (weiter)
+// Weiterspielen - neues Spiel
+function neuesSpiel(){
+  const neuMischen = prompt("Would you like to re-shuffel and start a new game? (y/n) ").toLowerCase();
+    console.log("");
+    console.log("");
+      if (neuMischen === "y")
+      // neueMischung(); // funktioniert nicht....
+      // return neueMischung(); // funktioniert nicht
+      // return true funktioniert nicht
+      console.log(gradient.rainbow("Start again...  😉"));
+  
+      if (neuMischen === "n"){
+    console.log(gradient.rainbow("Have a nice day... Bye 🤚")); 
+    console.log("");
+    console.log("");
+    return false
+  }
 }
-game() */
+/* neuesSpiel() */
+
