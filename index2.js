@@ -4,7 +4,7 @@ import chalk from 'chalk';
 import gradient from 'gradient-string';
 
 // Array of Objects
-  const testArray2 = [
+  const testArray = [
     {
       name: "clock1",
       pic: "🕓",
@@ -38,17 +38,17 @@ import gradient from 'gradient-string';
   ]
     
 
-/* console.log("TestArray2:", testArray2); */
+/* console.log("TestArray:", testArray); */
 console.log("");
 
-let newTestArray2 = []
+let newTestArray = []
 
-for( let i = 0; i< testArray2.length; i++){
-  let allPics = testArray2[i].pic;
-  newTestArray2.push(allPics)
+for( let i = 0; i< testArray.length; i++){
+  let allPics = testArray[i].pic;
+  newTestArray.push(allPics)
 }
 console.log("");
-console.log("newTestArray2-Join:", newTestArray2.join(" "));
+console.log("newTestArray-Join:", newTestArray.join(" "));
 
 // Mischen
 
@@ -64,33 +64,40 @@ console.log("newTestArray2-Join:", newTestArray2.join(" "));
 
   const newArray = []
   function neueMischung(){
-    testArray2.testMischen();
-    for(let i = 0; i < testArray2.length; i++){
-     newArray.push(testArray2[i]);
-/* console.log(newArray);
-console.log(newArray.length); */
-/* console.log("newArray:", newArray);
-console.log("newArray-i:", newArray[i]); */
-
+    testArray.testMischen();
+    for(let i = 0; i < testArray.length; i++){
+     newArray.push(testArray[i].pic);
     }
   return newArray
   }
 
     console.log("");
     console.log("");
-/*     console.log("newArray-join:", neueMischung().join(" ")); */
-    console.log("newArray:", neueMischung());
+    console.log("newArray_gemischt:", neueMischung().join(" "));
     console.log("");
     console.log("");
 
 
 // Auswahl aus new Array
 // max 2x
-let choice1 = newArray[2]
-let choice2 = newArray[4];
 
-/* const question = prompt("Please do your first choice (letter plus number):   " ) */
+const choice01 = prompt("Please do your first choice (number):   " )
+/* console.log("choice01:", choice01); */
+console.log();
+console.log();
 
+const choice02 = prompt("Please do your second choice (number):   " ) 
+
+// für test:
+let choice1 = newArray[choice01]
+console.log(choice1);
+console.log();
+let choice2 = newArray[choice02];
+console.log(choice2);
+console.log();
+
+console.log();
+console.log();
 
 
 //  Check
@@ -98,40 +105,31 @@ let choice2 = newArray[4];
     let chosenCardID= [];
     let choiceAmount = 0;
 
-
     function check(choice1, choice2){
       if (choiceArray.length === 0){
             choiceArray.push(choice1);
 /*             chosenCardID.push(cardID) */
-        }
-/*         console.log("1" , choiceArray); */
-
 
       if (choiceArray.length === 1){
         choiceArray.push(choice2);
     }
-/*     console.log("2" , choiceArray); */
-    console.log(choiceArray[0]);
-    console.log(choiceArray[1]);
+      console.log(" Your first choice:", choiceArray[0], "  Your second choice:", choiceArray[1]); 
 
-/*       if ( choiceArray[0] === choiceArray[1]){
-        choiceArray.splice(0,2)
-      console.log("match!!!!");
-      console.log(choiceArray);
- */
       if ( choiceArray[0] === choiceArray[1]){
-        choiceArray
-      console.log("match!!!!");
-      console.log("");
-      console.log(choiceArray);
-      console.log("ID" , chosenCardID);
+      console.log(" ");
+      console.log(gradient.rainbow("           Great! You found a match!              "));
+      console.log(" "); 
 
      }
      else{
-      console.log("try again...");
-      console.log("");
+      console.log(" ");
+      console.log(gradient.rainbow("      Sorry you failed. Please try again...         "));
+      console.log(" ");
+      console.log(" ");
+
      }
 
   }
+}
 
    check(newArray[3],newArray[5])

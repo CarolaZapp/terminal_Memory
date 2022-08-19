@@ -29,7 +29,7 @@ const question = prompt("Do you want to play memory with me? (y/n) " ).toLowerCa
    console.log("");
    console.log("");
    console.log(gradient.rainbow(coverArray.join(" ")));
- console.clear()
+/*  console.clear() */
 
 
   // Mischen
@@ -60,7 +60,7 @@ console.log(newArray.length); */
     console.log("   ", neueMischung().join(" "));
     console.log("");
     console.log("");
-console.clear()
+/* console.clear() */
 
     const coverArray2= ["███","███","███","███","███","███","███","███","███","███","███","███","███","███","███","███","███"];
 
