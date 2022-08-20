@@ -2,14 +2,15 @@ import promptSync from 'prompt-sync';
 const prompt = promptSync();
 import chalk from 'chalk';
 import gradient from 'gradient-string'
+import chalkAnimation from 'chalk-animation';
 
-console.log(gradient.rainbow
+/* console.log(gradient.rainbow
 (".----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. "));
 console.log(gradient.rainbow
 ("| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |"));
 console.log(gradient.rainbow
 ("| | ____    ____ | || |  _________   | || | ____    ____ | || |     ____     | || |  _______     | || |  ____  ____  | |"));
-
+ */
 /*  | ||_   \  /   _|| || | |_   ___  |  | || ||_   \  /   _|| || |   .'    `.   | || | |_   __ \    | || | |_  _||_  _| | |
  | |  |   \/   |  | || |   | |_  \_|  | || |  |   \/   |  | || |  /  .--.  \  | || |   | |__) |   | || |   \ \  / /   | |
  | |  | |\  /| |  | || |   |  _|  _   | || |  | |\  /| |  | || |  | |    | |  | || |   |  __ /    | || |    \ \/ /    | |
@@ -136,6 +137,85 @@ _|     _| _|     _| _|     _| _|     _| _|     _| _|     _|
  */
 
 //  
+
+
+
+let header2 = gradient.rainbow.multiline([
+
+"███╗   ███╗███████╗███╗   ███╗ ██████╗ ██████╗ ██╗   ██╗",
+"████╗ ████║██╔════╝████╗ ████║██╔═══██╗██╔══██╗╚██╗ ██╔╝",
+"██╔████╔██║█████╗  ██╔████╔██║██║   ██║██████╔╝ ╚████╔╝ ",
+"██║╚██╔╝██║██╔══╝  ██║╚██╔╝██║██║   ██║██╔══██╗  ╚██╔╝  ",
+"██║ ╚═╝ ██║███████╗██║ ╚═╝ ██║╚██████╔╝██║  ██║   ██║   ",
+"╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ",
+
+].join('\n'));
+console.log(header2);
+console.log("");
+
+
+// funktioniert nicht...
+
+/* 
+const mem1 = (
+  chalkAnimation.rainbow("███╗   ███╗ ███████╗ ███╗   ███╗  ██████╗  ██████╗  ██╗   ██╗")); */
+
+/* const mem2 = (
+  chalkAnimation.rainbow("████╗ ████║ ██╔════╝ ████╗ ████║ ██╔═══██╗ ██╔══██╗ ╚██╗ ██╔╝"));
+
+const mem3 = (
+  chalkAnimation.rainbow("██╔████╔██║ █████╗   ██╔████╔██║ ██║   ██║ ██████╔╝  ╚████╔╝ "));
+
+const mem4 = (
+  chalkAnimation.rainbow("██║╚██╔╝██║ ██╔══╝   ██║╚██╔╝██║ ██║   ██║ ██╔══██╗   ╚██╔╝  "));
+
+const mem5 = (
+  chalkAnimation.rainbow("██║ ╚═╝ ██║ ███████╗ ██║ ╚═╝ ██║ ╚██████╔╝ ██║  ██║    ██║   "));
+
+const mem6 = (
+  chalkAnimation.rainbow("╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═╝  ╚═╝    ╚═╝   ")); */
+  
+console.log("");
+  console.log("");
+
+/* setTimeout(() => {
+    mem1.stop(); // Animation stops
+}, 10000); */
+/* setTimeout(() => {
+  mem2.stop(); // Animation stops
+}, 10000);
+setTimeout(() => {
+  mem3.stop(); // Animation stops
+}, 10000);
+setTimeout(() => {
+  mem4.stop(); // Animation stops
+}, 10000);
+setTimeout(() => {
+  mem5.stop(); // Animation stops
+}, 10000);
+setTimeout(() => {
+  mem6.stop(); // Animation stops
+}, 10000);
+ */
+
+
+
+/* setTimeout(() => {
+    rainbow.start(); // Animation resumes
+}, 3000); */
+
+/* const rainbow = chalkAnimation.rainbow('Lorem ipsum'); // Animation starts
+
+setTimeout(() => {
+    rainbow.stop(); // Animation stops
+}, 10000); */
+
+/* setTimeout(() => {
+    rainbow.start(); // Animation resumes
+}, 1000); */
+
+
+
 /* 
 ███╗   ███╗███████╗███╗   ███╗ ██████╗ ██████╗ ██╗   ██╗
 ████╗ ████║██╔════╝████╗ ████║██╔═══██╗██╔══██╗╚██╗ ██╔╝

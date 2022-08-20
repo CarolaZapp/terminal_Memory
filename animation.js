@@ -1,4 +1,5 @@
 import chalkAnimation from 'chalk-animation';
+import gradient from 'gradient-string'
 
 /* chalkAnimation.rainbow('Lorem ipsum dolor sit amet'); */
 
@@ -18,13 +19,18 @@ setTimeout(() => {
 // Anything printed to the console will stop the previous animation automatically
 
 //// Variationen --------RAINBOW--------------------------
-chalkAnimation.rainbow('Lorem ipsum dolor sit amet');
+/* chalkAnimation.rainbow('Lorem ipsum dolor sit amet');
 setTimeout(() => {
     // Stop the 'Lorem ipsum' animation, then write on a new line.
     console.log("weiter geht`s....");
-}, 1000);
+}, 1000); */
 
+console.log(gradient.rainbow
+    ("OO                         ",chalkAnimation.rainbow("I love memory!"),"                          OO"));  
 
+    setTimeout(() => {
+
+    }, 1000);
 // // ---PULSE
 /* chalkAnimation.pulse('Lorem ipsum dolor sit amet');
 setTimeout(() => {

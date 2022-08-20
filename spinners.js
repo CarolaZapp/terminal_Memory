@@ -1,19 +1,22 @@
 import cliSpinners from "cli-spinners";
 
 
-console.log(cliSpinners.dots);
-Beispiel: dots
-/*
-"dots":
+
+
+/* console.log(cliSpinners.dots);
+Beispiel: dots */
+
+/* "dots":
 {
 	"interval": 80,
 	"frames": ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
 }
-*/
+ */
 
-/* "clock": {
-  "interval": 100,
-  "frames": [
+console.log(cliSpinners.clock);
+const clock  = {
+  interval: 100,
+  frames: [
     "🕛 ",
     "🕐 ",
     "🕑 ",
@@ -27,7 +30,11 @@ Beispiel: dots
     "🕙 ",
     "🕚 "
   ]
- */
+}
+
+console.log(cliSpinners.clock);
+
+
 
 /* "arrow2": {
   "interval": 80,

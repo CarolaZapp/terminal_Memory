@@ -3,6 +3,7 @@ const prompt = promptSync({eot: true});
 import chalk from 'chalk';
 import gradient from 'gradient-string';
 
+
 // header
 
 console.log("");
@@ -11,73 +12,65 @@ console.log("");
 console.log("");
 
 
-console.log(
-gradient.rainbow("███╗   ███╗ ███████╗ ███╗   ███╗  ██████╗  ██████╗  ██╗   ██╗"));
-console.log(
-gradient.rainbow("████╗ ████║ ██╔════╝ ████╗ ████║ ██╔═══██╗ ██╔══██╗ ╚██╗ ██╔╝"));
-console.log(
-gradient.rainbow("██╔████╔██║ █████╗   ██╔████╔██║ ██║   ██║ ██████╔╝  ╚████╔╝ "));
-console.log(
-gradient.rainbow("██║╚██╔╝██║ ██╔══╝   ██║╚██╔╝██║ ██║   ██║ ██╔══██╗   ╚██╔╝  "));
-console.log(
-gradient.rainbow("██║ ╚═╝ ██║ ███████╗ ██║ ╚═╝ ██║ ╚██████╔╝ ██║  ██║    ██║   "));
-console.log(
-gradient.rainbow("╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═╝  ╚═╝    ╚═╝   "));
+let header1 = gradient.rainbow.multiline([
+
+  "███╗   ███╗███████╗███╗   ███╗ ██████╗ ██████╗ ██╗   ██╗",
+  "████╗ ████║██╔════╝████╗ ████║██╔═══██╗██╔══██╗╚██╗ ██╔╝",
+  "██╔████╔██║█████╗  ██╔████╔██║██║   ██║██████╔╝ ╚████╔╝ ",
+  "██║╚██╔╝██║██╔══╝  ██║╚██╔╝██║██║   ██║██╔══██╗  ╚██╔╝  ",
+  "██║ ╚═╝ ██║███████╗██║ ╚═╝ ██║╚██████╔╝██║  ██║   ██║   ",
+  "╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ",
+  
+  ].join('\n'));
+  console.log(header1);
+
 
 console.log("");
 console.log("");
-
-
 
 // // //
 console.log("");
 console.log("");
 
-console.log(
-  gradient.rainbow("███    ███  ███████  ███    ███   ██████   ██████   ██    ██ "));
-  console.log(
-  gradient.rainbow("████  ████  ██       ████  ████  ██    ██  ██   ██   ██  ██  "));
-  console.log(
-  gradient.rainbow("██ ████ ██  █████    ██ ████ ██  ██    ██  ██████     ████   "));
-  console.log(
-  gradient.rainbow("██  ██  ██  ██       ██  ██  ██  ██    ██  ██   ██     ██    "));
-  console.log(
-  gradient.rainbow("██      ██  ███████  ██      ██   ██████   ██   ██     ██    "));
+let header2 = gradient.rainbow.multiline([
+  "███    ███  ███████  ███    ███   ██████   ██████   ██    ██ ",
+  "████  ████  ██       ████  ████  ██    ██  ██   ██   ██  ██  ",
+  "██ ████ ██  █████    ██ ████ ██  ██    ██  ██████     ████   ",
+  "██  ██  ██  ██       ██  ██  ██  ██    ██  ██   ██     ██    ",
+  "██      ██  ███████  ██      ██   ██████   ██   ██     ██    ",
 
-  
-  console.log("");
-  console.log("");
+  ].join('\n'));
+  console.log(header2);
+
+console.log("");
+console.log("");
 
   // // //
 
   console.log("");
   console.log("");
 
-  console.log(
-  gradient.rainbow("╔═╗     ╔═╗ ╔══════╗ ╔═╗     ╔═╗  ╔═════╗  ╔═════╗  ╔═╗   ╔═╗"));
-  console.log(
-  gradient.rainbow("║ ╚═╗ ╔═╝ ║ ║ ╔════╝ ║ ╚═╗ ╔═╝ ║ ╔╝╔═══╗╚╗ ║ ╔══╗╚╗ ╚╗╚╗ ╔╝╔╝"));
-  console.log(
-  gradient.rainbow("║ ╔╗╚═╝╔╗ ║ ║ ╚══╗   ║ ╔╗╚═╝╔╗ ║ ║ ║   ║ ║ ║ ╚══╝╔╝  ╚╗╚═╝╔╝ "));
-  console.log(
-  gradient.rainbow("║ ║╚╗ ╔╝║ ║ ║ ╔══╝   ║ ║╚╗ ╔╝║ ║ ║ ║   ║ ║ ║ ╔══╗╚╗   ╚╗ ╔╝  "));
-  console.log(
-  gradient.rainbow("║ ║ ╚═╝ ║ ║ ║ ╚════╗ ║ ║ ╚═╝ ║ ║ ╚╗╚═══╝╔╝ ║ ║  ║ ║    ║ ║   "));
-  console.log(
-  gradient.rainbow("╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═╝  ╚═╝    ╚═╝   "));
-  
-  console.log("");
-  console.log(""); 
-/*   console.log("");
-  console.log("");  */
+  let header3 = gradient.rainbow.multiline([
+  "╔═╗     ╔═╗ ╔══════╗ ╔═╗     ╔═╗  ╔═════╗  ╔═════╗  ╔═╗   ╔═╗",
+  "║ ╚═╗ ╔═╝ ║ ║ ╔════╝ ║ ╚═╗ ╔═╝ ║ ╔╝╔═══╗╚╗ ║ ╔══╗╚╗ ╚╗╚╗ ╔╝╔╝",
+  "║ ╔╗╚═╝╔╗ ║ ║ ╚══╗   ║ ╔╗╚═╝╔╗ ║ ║ ║   ║ ║ ║ ╚══╝╔╝  ╚╗╚═╝╔╝ ",
+  "║ ║╚╗ ╔╝║ ║ ║ ╔══╝   ║ ║╚╗ ╔╝║ ║ ║ ║   ║ ║ ║ ╔══╗╚╗   ╚╗ ╔╝  ",
+  "║ ║ ╚═╝ ║ ║ ║ ╚════╗ ║ ║ ╚═╝ ║ ║ ╚╗╚═══╝╔╝ ║ ║  ║ ║    ║ ║   ",
+  "╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═╝  ╚═╝    ╚═╝   ",
+
+  ].join('\n'));
+  console.log(header2);
+
+console.log("");
+console.log(""); 
 
 // Frage
 function start(){
 const question = prompt("Do you want to play memory with me? (y/n)  ").toLowerCase();
-console.log("");
-console.log(""); 
+  console.log("");
+  console.log(""); 
 console.clear()
-console.log(""); 
+  console.log(""); 
 
   if ( question === "y"){
     console.log(gradient.rainbow("Great! 😃  Let's get started then...")); 
@@ -86,7 +79,6 @@ console.log("");
   }
   if (question === "n"){
       console.log(gradient.rainbow("What a pity!... 😦")); 
-    return false
   }
 }
 start()
@@ -160,32 +152,32 @@ console.log(gradient.rainbow
     {
       name: "clock1",
       pic: "🕓",
-      id: 1,
+      // id: 1,
     },
     {
       name: "clock2",
       pic: "🕓",
-      id: 2,
+      // id: 2,
     },
     {
       name: "monkey1",
       pic: "🙊 ",
-      id: 3,
+      // id: 3,
     },
     {
       name: "monkey2",
       pic: "🙊 ",
-      id: 4,
+      // id: 4,
     },
     {
       name: "world1",
       pic: "🌍 ",
-      id: 5,
+      // id: 5,
     },
     {
       name: "world2",
       pic: "🌍 ",
-      id: 6,
+      // id: 6,
     },
   ]
 
@@ -231,9 +223,9 @@ neueMischung()
 function choiceA(){
   const choice01 = prompt(gradient.rainbow("Please do your first choice (number):   " ));
   console.log("");
-  console.log("");
+
   const choice1 = newArray[choice01];
-  return choice1
+  return choice1;
 }
 
 function choiceB(){
@@ -241,14 +233,14 @@ function choiceB(){
   console.log("");
 
   const choice2 = newArray[choice02];
-  return choice2
+  return choice2;
 }
 
-// funktioniert noch nicht ....
-/* if(choice02 === choice01){
-  console.log("Please choose a different card than the first one ");
-  const choice02 = prompt("Please do your second choice (number):   " ) 
-} */
+if(choiceA() === choiceB()){
+  console.log("Please choose a different card than the first one! ");
+  console.log("");
+  console.log("");
+}
 
 
 console.log("");
@@ -256,39 +248,50 @@ console.log("");
 
 
 //  Check
-   
+    let pairs = []
+
     function check(){
     let choiceArray = [];
+  
       if (choiceArray.length === 0){
           choiceArray.push(choiceA());
       }
       if (choiceArray.length === 1){
           choiceArray.push(choiceB());
       }
+      console.log("");
       console.log("Your first choice:", choiceArray[0], "  Your second choice:", choiceArray[1]); 
+      console.log("");
 
       if ( choiceArray[0] === choiceArray[1]){
       console.log(" ");
       console.log(gradient.rainbow("✨   ✨   ✨ Great! You found a match! ✨   ✨   ✨"));
+      pairs.push(choiceArray[0],choiceArray[1]) 
+      console.log("");
+      console.log("");
+      console.log(gradient.rainbow("Already found pairs: "), pairs.join(" "));
       console.log("");
       console.log("");
       }
-/*       return gradient.rainbow("           Great! You found a match!              ");
-      } */
-// match anzeigen  
-// => noch offen
-// match aus newArray entfernen
-// => noch offen
 
       else {
       console.log("");
       console.log(gradient.rainbow("      Sorry you failed. Please try again...         ")); 
       console.log("");
       console.log("");
-
-/*       return gradient.rainbow("      Sorry you failed. Please try again...         "); */
       }
-/*       return check(); */
+
+      if( pairs.length === newArray.length){
+        console.log(gradient.rainbow("💥   💥   💥   💥   💥   💥   💥   💥   💥   💥   💥")); 
+        console.log(gradient.rainbow("💥   💥   💥                            💥   💥   💥")); 
+        console.log(gradient.rainbow("💥   💥   💥   You found all matches!   💥   💥   💥")); 
+        console.log(gradient.rainbow("💥   💥   💥                            💥   💥   💥")); 
+        console.log(gradient.rainbow("💥   💥   💥   💥   💥   💥   💥   💥   💥   💥   💥")); 
+        console.log("");
+        console.log("");
+        pairs = [];
+        /* neuesSpiel();  */   
+      }
     }
 
   check()
@@ -309,11 +312,13 @@ console.log("");
     console.log(gradient.rainbow("What a pity!... 🙈 ")); 
     console.log("");
     console.log("");
-    neuesSpiel()
+    neuesSpiel();
   }
 /* return weiterSpielen() */
 }
 weiterSpielen()
+
+  
 
 // Weiterspielen - neues Spiel
 function neuesSpiel(){
@@ -325,7 +330,7 @@ function neuesSpiel(){
       // return neueMischung(); // funktioniert nicht
       // return true funktioniert nicht
          console.log(gradient.rainbow("Start again...  😉"));
- 
+
       if (neuMischen === "n"){
     console.log(gradient.rainbow("Have a nice day... Bye 🤚")); 
     console.log("");
@@ -333,5 +338,6 @@ function neuesSpiel(){
     false
   }
 }
+
 
 
