@@ -100,14 +100,14 @@ console.log(header4);
 // // // Rahmen
 console.log(); 
 /* console.log(); */
-let frame1 = gradient.rainbow.multiline([
+let frame = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                         I love memory!                          OO", 
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                                                                 OO",
 "OO                                                                 OO",
 ].join('\n'));
-console.log(frame1);
+console.log(frame);
 
   console.log
   (gradient.rainbow("OO  "),"╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗",gradient.rainbow("  OO" ) );
@@ -124,13 +124,13 @@ console.log(frame1);
   console.log
   (gradient.rainbow("OO  "),"╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝",gradient.rainbow("  OO" ));
   
-let frame2 = gradient.rainbow.multiline([
+let frame0 = gradient.rainbow.multiline([
 "OO                                                                 OO",
 "OO                                                                 OO",
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 ].join('\n'));
-console.log(frame2);
+console.log(frame0);
   
   console.log("                                                          ");
   console.log("                                                          ");
@@ -169,6 +169,10 @@ console.log(frame2);
       // id: 6,
     },
   ]
+
+
+// 🌒 , ⚽️ , 🧑, 🎄, ⛈, 🌤 , 🏃, 🤟, 💥 , 
+
 
 let newTestArray = []
 
