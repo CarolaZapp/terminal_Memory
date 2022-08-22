@@ -3,18 +3,20 @@ const prompt = promptSync({eot: true});
 import chalk from 'chalk';
 import gradient from 'gradient-string';
 
-// // // Rahmen  Level 1 Deckblatt coverLine 2
+// // // Rahmen  Level 1 Deckblatt coverLine 3
 console.log(); 
 console.log();
 
-let frameCL2 = gradient.rainbow.multiline([
+function frame1CoverLine3(){
+
+let frameCL3 = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                            I love memory!                             OO", 
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                                                                       OO",
 "OO                                                                       OO",
 ].join('\n'));
-console.log(frameCL2);
+console.log(frameCL3);
 
 // Reihe 1
 
@@ -38,14 +40,14 @@ console.log(frameCL2);
   (gradient.rainbow("OO  "), gradient.rainbow("╚═══════╝ "), gradient.rainbow("╚═══════╝ "), gradient.rainbow("╚═══════╝ "), gradient.rainbow("╚═══════╝ "), gradient.rainbow("╚═══════╝ "), gradient.rainbow("╚═══════╝ "), gradient.rainbow("  OO" ));
 
   
-let frame0CL1 = gradient.rainbow.multiline([
+let frame0CL3 = gradient.rainbow.multiline([
 "OO                                                                       OO",
 "OO                                                                       OO",
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 
 ].join('\n'));
-console.log(frame0CL1);
-  
-  console.log("                                                          ");
-  console.log("                                                          ");
+console.log(frame0CL3);
+}
+
+export default frame1CoverLine3

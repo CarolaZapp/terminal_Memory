@@ -2,14 +2,21 @@ import promptSync from 'prompt-sync';
 const prompt = promptSync({eot: true});
 import chalk from 'chalk';
 import gradient from 'gradient-string';
-
+/* import level2 from './level2.js'; */
+import frame1 from './frame1.js'
+import frame1CoverFull1 from './frame1CoverFull1.js';
+import frame1CoverFull2 from './frame1CoverFull2.js';
+import frame1CoverLine1 from './frame1CoverLine1.js';
+import frame1CoverLine2 from './frame1CoverLine2.js';
+import frame1CoverLine3 from './frame1CoverLine3.js';
+console.clear();
 
 // header
 
 console.log("");
 console.log("");
 console.log("");
-console.log("");
+console.log(""); 
 
 
 let header1 = gradient.rainbow.multiline([
@@ -38,7 +45,6 @@ let header2 = gradient.rainbow.multiline([
   "██ ████ ██  █████    ██ ████ ██  ██    ██  ██████     ████   ",
   "██  ██  ██  ██       ██  ██  ██  ██    ██  ██   ██     ██    ",
   "██      ██  ███████  ██      ██   ██████   ██   ██     ██    ",
-
   ].join('\n'));
   console.log(header2);
 
@@ -59,7 +65,7 @@ console.log("");
   "╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═╝  ╚═╝    ╚═╝   ",
 
   ].join('\n'));
-  console.log(header2);
+  console.log(header3);
 
 console.log("");
 console.log(""); 
@@ -71,24 +77,108 @@ const question = prompt("Do you want to play memory with me? (y/n)  ").toLowerCa
   console.log(""); 
 console.clear()
   console.log(""); 
+  console.log("");
+
 
   if ( question === "y"){
     console.log(gradient.rainbow("Great! 😃  Let's get started then...")); 
     console.log(" ");
+    console.log("");
 
   }
   if (question === "n"){
       console.log(gradient.rainbow("What a pity!... 😦")); 
+      console.log("");
+      return 
     }
   }
 start()
 
+// Auswahl Deckblatt 
+
+function decide (){
+console.log("There are 6 different cover available.");
+console.log("Number 1:");
+  const heart = frame1();
+  console.log(heart);
+
+console.log("Number 2:",);
+  const full = frame1CoverFull1();
+  console.log(full);
+
+console.log("Number 3:",);
+  const full2 = frame1CoverFull2();
+  console.log(full2);
+
+console.log("Number 4:");
+  const line1 = frame1CoverLine1();
+  console.log(line1);
+
+console.log("Number 5:",);
+  const line2 = frame1CoverLine2();
+  console.log(line2);
+
+console.log("Number 6:",);
+  const line3 = frame1CoverLine3();
+  console.log(line3);
+
+  console.log("");
+  console.log("");
+
+const cover = prompt ("Please choose a cover for your game! (number):  ");
+console.log("");
+console.log(gradient.rainbow("You choose cover: " + cover));
+}
+
+decide()
+
+
+//  Auswahl Level - Funktioniert noch nicht
+
+/* function level (){
+
+let decide = gradient.rainbow.multiline([
+"There are 4 levels available:",
+"Level 1 with 6 cards and 3 pairs to find",
+"Level 2 with 12 cards and 6 pairs to find",
+"Level 3 with 18 cards and 9 pairs to find",
+"Level 4 with 24 cards and 12 pairs to find",
+].join('\n'));
+console.log(decide);
+
+console.log("");
+console.log(""); 
+
+const chooseLevel = prompt("Please choose the level for your game! (number):  ");
+console.log("");
+console.log(""); 
+console.log(gradient.rainbow("You choose level: " + chooseLevel));
+console.log("");
+console.log(""); 
+
+if (chooseLevel === "1"){
+    console.log("Level 1 soll hier sein");
+}
+if (chooseLevel === "2"){
+   console.log("Level 2 kommt hier noch...");
+}
+if (chooseLevel === "3"){
+   console.log("Level 3 kommt hier noch...");
+}
+if (chooseLevel === "4"){
+   console.log("Level 4 kommt hier noch...");
+}
+
+}
+level()
+ */
 
 // 
 // face1
 
 console.log("");
 console.log("");
+
 let header4 = gradient.rainbow.multiline([
 "     )))           +++           &&&           xxx           (((     ",
 "    (o o)         (o o)         (o o)         (o o)         (o o)    ",
@@ -96,9 +186,11 @@ let header4 = gradient.rainbow.multiline([
 ].join('\n'));
 console.log(header4);
 
-// // // Rahmen
+
+// // // Rahmen Frame1 Level 1
 console.log(); 
 /* console.log(); */
+
 let frame = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                         I love memory!                          OO", 
@@ -130,9 +222,7 @@ let frame0 = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 ].join('\n'));
 console.log(frame0);
-  
-  console.log("                                                          ");
-  console.log("                                                          ");
+
   
 
 // Array of Objects
@@ -170,15 +260,13 @@ console.log(frame0);
   ]
 
 
-// für weitere Level 🌒 , ⚽️ , 🧑, 🎄, ⛈, 🌤 , 🏃, 🤟, 💥 , 
-
-
 let newTestArray = []
 
 for( let i = 0; i< testArray.length; i++){
   let allPics = testArray[i].pic;
   newTestArray.push(allPics)
 }
+
 /* console.log(""); */
 
 
@@ -224,9 +312,11 @@ function choiceB(){
   const choice02 = prompt(gradient.rainbow("Please do your second choice (number):   " ));
   console.log("");
 
+
   const choice2 = newArray[choice02];
   return choice2;
 }
+
 
 // if(choiceA() === choiceB()){
 //   console.log("Please choose a different card than the first one! ");
@@ -297,8 +387,6 @@ console.log("");
 
   check()
 
-console.log("");
-console.log("");
 
 // Weiterspielen - neue Runde 
 
@@ -321,19 +409,17 @@ console.log("");
 }
 weiterSpielen()
 
-  
-
 // Weiterspielen - neues Spiel
 function neuesSpiel(){
   const neuMischen = prompt("Would you like to re-shuffel and start a new game? (y/n) ").toLowerCase();
     console.log("");
     console.log("");
-      if (neuMischen === "y")
+      if (neuMischen === "y"){
       // neueMischung(); // funktioniert nicht....
       // return neueMischung(); // funktioniert nicht
       // return true funktioniert nicht
          console.log(gradient.rainbow("Start again...  😉"));
-
+      }
       if (neuMischen === "n"){
     console.log(gradient.rainbow("Have a nice day... Bye 🤚")); 
     console.log("");
@@ -341,24 +427,3 @@ function neuesSpiel(){
     false
   }
 }
-
-
-
-
-
-// weitere Ideen zum einbauen....
-
-/* let counter = 0;
-const repeatIt10 = () => {
-  counter++
-  console.log(counter);
-  if (counter === 10){
-    clearInterval(test3)
-  }
-}
-
-const test3 = setInterval(function() {repeatIt10()}, 1000) */
-
-/* 
-const repeatIt = () => {console.log("hello")};
-const test1 = setTimeout(function() {repeatIt()}, 2000) */
