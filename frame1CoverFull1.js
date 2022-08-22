@@ -3,9 +3,10 @@ const prompt = promptSync({eot: true});
 import chalk from 'chalk';
 import gradient from 'gradient-string';
 
-// // // Rahmen  Level 1
+// // // Rahmen  Level 1 Deckblatt coverFull 1
 console.log(); 
-/* console.log(); */
+console.log(); 
+
 let frameCF = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                        I love memory!                         OO", 

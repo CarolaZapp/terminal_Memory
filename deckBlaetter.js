@@ -47,6 +47,17 @@ console.log(gradient.rainbow("║═══║═══║ "));
 console.log(gradient.rainbow("╚═══════╝ "));
 
 
+// Deckblatt coverLine 3
+console.log("");
+console.log("");
+console.log(gradient.rainbow("╔═══════╗ "));
+console.log(gradient.rainbow("║* * * *║ "));
+console.log(gradient.rainbow("║ * * * ║ "));
+console.log(gradient.rainbow("║* * * *║ "));
+console.log(gradient.rainbow("║ * *12*║ "));
+console.log(gradient.rainbow("╚═══════╝ "));
+
+// Deckblatt coverLine 4
 console.log("");
 console.log("");
 console.log(gradient.rainbow("╔═══════╗ "));
@@ -56,6 +67,27 @@ console.log(gradient.rainbow("║(12)   ║ "));
 console.log(gradient.rainbow("║   (_) ║ "));
 console.log(gradient.rainbow("╚═══════╝ "));
 
+
+// Deckblatt coverLine 5
+console.log("");
+console.log("");
+console.log(gradient.rainbow("╔═══════╗ "));
+console.log(gradient.rainbow("║~~~~~~~║ "));
+console.log(gradient.rainbow("║~~~~~~~║ "));
+console.log(gradient.rainbow("║~~~~~~~║ "));
+console.log(gradient.rainbow("║~~~~12~║ "));
+console.log(gradient.rainbow("╚═══════╝ "));
+
+
+// Deckblatt coverPC
+console.log("");
+console.log("");
+console.log(gradient.rainbow("╔════════╗ "));
+console.log(gradient.rainbow("║        ║ "));
+console.log(gradient.rainbow("║ <{PC}> ║ "));
+console.log(gradient.rainbow("║        ║ "));
+console.log(gradient.rainbow("║     12 ║ "));
+console.log(gradient.rainbow("╚════════╝ "));
 
 
 

@@ -5,7 +5,8 @@ import gradient from 'gradient-string';
 
 // // // Rahmen  Level 1
 console.log(); 
-/* console.log(); */
+
+
 let frame = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                               I love memory!                                OO", 
@@ -14,6 +15,7 @@ let frame = gradient.rainbow.multiline([
 "OO                                                                             OO",
 ].join('\n'));
 console.log(frame);
+
 // Reihe 1
   console.log
   (gradient.rainbow("OO  "),"╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗",gradient.rainbow("  OO" ) );
