@@ -1,17 +1,15 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync({eot: true});
-import chalk from 'chalk';
 import gradient from 'gradient-string';
 
-
-// header
+// header 
 
 console.log("");
 console.log("");
 console.log("");
-console.log("");
+console.log(""); 
 
-
+// // header 1
 let header1 = gradient.rainbow.multiline([
 
   "███╗   ███╗███████╗███╗   ███╗ ██████╗ ██████╗ ██╗   ██╗",
@@ -28,7 +26,7 @@ let header1 = gradient.rainbow.multiline([
 console.log("");
 console.log("");
 
-// // //
+// // header 2
 console.log("");
 console.log("");
 
@@ -38,14 +36,13 @@ let header2 = gradient.rainbow.multiline([
   "██ ████ ██  █████    ██ ████ ██  ██    ██  ██████     ████   ",
   "██  ██  ██  ██       ██  ██  ██  ██    ██  ██   ██     ██    ",
   "██      ██  ███████  ██      ██   ██████   ██   ██     ██    ",
-
   ].join('\n'));
   console.log(header2);
 
 console.log("");
 console.log("");
 
-  // // //
+// // header 3
 
   console.log("");
   console.log("");
@@ -59,36 +56,40 @@ console.log("");
   "╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═╝  ╚═╝    ╚═╝   ",
 
   ].join('\n'));
-  console.log(header2);
+  console.log(header3);
 
 console.log("");
 console.log(""); 
 
-// Frage
+// Erste Frage
+
 function start(){
 const question = prompt("Do you want to play memory with me? (y/n)  ").toLowerCase();
   console.log("");
   console.log(""); 
 console.clear()
   console.log(""); 
+  console.log("");
+
 
   if ( question === "y"){
     console.log(gradient.rainbow("Great! 😃  Let's get started then...")); 
     console.log(" ");
+    console.log("");
 
   }
   if (question === "n"){
       console.log(gradient.rainbow("What a pity!... 😦")); 
+      console.log("");
     }
   }
 start()
 
-
-// 
-// face1
+// Display 
 
 console.log("");
 console.log("");
+
 let header4 = gradient.rainbow.multiline([
 "     )))           +++           &&&           xxx           (((     ",
 "    (o o)         (o o)         (o o)         (o o)         (o o)    ",
@@ -96,12 +97,13 @@ let header4 = gradient.rainbow.multiline([
 ].join('\n'));
 console.log(header4);
 
-// // // Rahmen
+
+// // // Rahmen Frame1 Level 1
 console.log(); 
-/* console.log(); */
+
 let frame = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO                         I love memory!                          OO", 
+"OO  Level 1                 I love memory!                         OO", 
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                                                                 OO",
 "OO                                                                 OO",
@@ -121,7 +123,7 @@ console.log(frame);
   ("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║",gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
   
   console.log
-  (gradient.rainbow("OO  "),"╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝",gradient.rainbow("  OO" ));
+  (gradient.rainbow("OO  "),"╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝",gradient.rainbow("  OO" ))
   
 let frame0 = gradient.rainbow.multiline([
 "OO                                                                 OO",
@@ -130,12 +132,10 @@ let frame0 = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 ].join('\n'));
 console.log(frame0);
-  
-  console.log("                                                          ");
-  console.log("                                                          ");
+
   
 
-// Array of Objects
+// Kartenanlage - Array of Objects
   const testArray = [
     {
       name: "clock1",
@@ -166,11 +166,8 @@ console.log(frame0);
       name: "world2",
       pic: "🌍 ",
       // id: 6,
-    },
+    }
   ]
-
-
-// für weitere Level 🌒 , ⚽️ , 🧑, 🎄, ⛈, 🌤 , 🏃, 🤟, 💥 , 
 
 
 let newTestArray = []
@@ -179,7 +176,6 @@ for( let i = 0; i< testArray.length; i++){
   let allPics = testArray[i].pic;
   newTestArray.push(allPics)
 }
-/* console.log(""); */
 
 
 // Mischen
@@ -206,33 +202,28 @@ for( let i = 0; i< testArray.length; i++){
 
 neueMischung()
 
-// Hidden Array to choose
-/*     console.log("newArray_gemischt:", neueMischung().join(" ")); */
 
 // Auswahl aus new Array
-// max 2x
 
-function choiceA(){
-  const choice01 = prompt(gradient.rainbow("Please do your first choice (number):   " ));
-  console.log("");
 
-  const choice1 = newArray[choice01];
-  return choice1;
-}
+  function choiceA(){
+    console.log("");
+    const choice01 = prompt(gradient.rainbow("Please do your first choice (number):   " ));
+    console.log("");
 
-function choiceB(){
-  const choice02 = prompt(gradient.rainbow("Please do your second choice (number):   " ));
-  console.log("");
+    const choice1 = newArray[choice01];
+    return choice1;
+  }
 
-  const choice2 = newArray[choice02];
-  return choice2;
-}
+  function choiceB(){
+    console.log("");
+    const choice02 = prompt(gradient.rainbow("Please do your second choice (number):   " ));
+    console.log("");
 
-// if(choiceA() === choiceB()){
-//   console.log("Please choose a different card than the first one! ");
-//   console.log("");
-//   console.log("");
-// }
+    const choice2 = newArray[choice02];
+    return choice2;
+  }
+
 
 
 console.log("");
@@ -290,15 +281,12 @@ console.log("");
         console.log("");
         pairs = [];
         console.log(gradient.rainbow("Needed choices: "), choiceCount);
-
-        /* neuesSpiel();  */   
+        console.log("");
       }
     }
 
   check()
 
-console.log("");
-console.log("");
 
 // Weiterspielen - neue Runde 
 
@@ -317,23 +305,17 @@ console.log("");
     console.log("");
     neuesSpiel();
   }
-/* return weiterSpielen() */
 }
-weiterSpielen()
-
-  
+weiterSpielen();
 
 // Weiterspielen - neues Spiel
 function neuesSpiel(){
   const neuMischen = prompt("Would you like to re-shuffel and start a new game? (y/n) ").toLowerCase();
     console.log("");
     console.log("");
-      if (neuMischen === "y")
-      // neueMischung(); // funktioniert nicht....
-      // return neueMischung(); // funktioniert nicht
-      // return true funktioniert nicht
+      if (neuMischen === "y"){
          console.log(gradient.rainbow("Start again...  😉"));
-
+      }
       if (neuMischen === "n"){
     console.log(gradient.rainbow("Have a nice day... Bye 🤚")); 
     console.log("");
@@ -341,24 +323,3 @@ function neuesSpiel(){
     false
   }
 }
-
-
-
-
-
-// weitere Ideen zum einbauen....
-
-/* let counter = 0;
-const repeatIt10 = () => {
-  counter++
-  console.log(counter);
-  if (counter === 10){
-    clearInterval(test3)
-  }
-}
-
-const test3 = setInterval(function() {repeatIt10()}, 1000) */
-
-/* 
-const repeatIt = () => {console.log("hello")};
-const test1 = setTimeout(function() {repeatIt()}, 2000) */

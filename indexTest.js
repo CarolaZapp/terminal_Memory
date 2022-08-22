@@ -3,13 +3,20 @@ const prompt = promptSync({eot: true});
 import chalk from 'chalk';
 import gradient from 'gradient-string';
 /* import level2 from './level2.js'; */
+import frame1 from './frame1.js'
+import frame1CoverFull1 from './frame1CoverFull1.js';
+import frame1CoverFull2 from './frame1CoverFull2.js';
+import frame1CoverLine1 from './frame1CoverLine1.js';
+import frame1CoverLine2 from './frame1CoverLine2.js';
+import frame1CoverLine3 from './frame1CoverLine3.js';
+console.clear();
 
 // header
 
 console.log("");
 console.log("");
 console.log("");
-console.log("");
+console.log(""); 
 
 
 let header1 = gradient.rainbow.multiline([
@@ -38,7 +45,6 @@ let header2 = gradient.rainbow.multiline([
   "██ ████ ██  █████    ██ ████ ██  ██    ██  ██████     ████   ",
   "██  ██  ██  ██       ██  ██  ██  ██    ██  ██   ██     ██    ",
   "██      ██  ███████  ██      ██   ██████   ██   ██     ██    ",
-
   ].join('\n'));
   console.log(header2);
 
@@ -83,11 +89,49 @@ console.clear()
   if (question === "n"){
       console.log(gradient.rainbow("What a pity!... 😦")); 
       console.log("");
-
       return 
     }
   }
 start()
+
+// Auswahl Deckblatt Funktioniert noch nicht
+
+/* function decide (){
+console.log("There are 6 different cover available.");
+console.log("Number 1:");
+  const heart = frame1();
+  console.log(heart);
+
+console.log("Number 2:",);
+  const full = frame1CoverFull1();
+  console.log(full);
+
+console.log("Number 3:",);
+  const full2 = frame1CoverFull2();
+  console.log(full2);
+
+console.log("Number 4:");
+  const line1 = frame1CoverLine1();
+  console.log(line1);
+
+console.log("Number 5:",);
+  const line2 = frame1CoverLine2();
+  console.log(line2);
+
+console.log("Number 6:",);
+  const line3 = frame1CoverLine3();
+  console.log(line3);
+
+  console.log("");
+  console.log("");
+
+const cover = prompt ("Please choose a cover for your game! (number):  ");
+console.log("");
+console.log(gradient.rainbow("You choose cover: " + cover));
+}
+
+decide() */
+
 
 //  Auswahl Level - Funktioniert noch nicht
 
@@ -105,7 +149,7 @@ console.log(decide);
 console.log("");
 console.log(""); 
 
-const chooseLevel = prompt("Please choose the level for your game! (number):  ").toLowerCase();
+const chooseLevel = prompt("Please choose the level for your game! (number):  ");
 console.log("");
 console.log(""); 
 console.log(gradient.rainbow("You choose level: " + chooseLevel));
@@ -149,7 +193,7 @@ console.log();
 
 let frame = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO                         I love memory!                          OO", 
+"OO  Level 1          I love memory!                                OO", 
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                                                                 OO",
 "OO                                                                 OO",
@@ -179,8 +223,6 @@ let frame0 = gradient.rainbow.multiline([
 ].join('\n'));
 console.log(frame0);
 
-  console.log("                                                          ");
-  console.log("                                                          ");
   
 
 // Array of Objects
@@ -258,11 +300,18 @@ neueMischung()
 // Auswahl aus new Array
 // max 2x
 
+let prevent  = [];
+
 function choiceA(){
+  
   const choice01 = prompt(gradient.rainbow("Please do your first choice (number):   " ));
   console.log("");
 
   const choice1 = newArray[choice01];
+  console.log("new array Choice 1:" ,newArray[choice01]);
+  console.log("choice 1:", choice01);
+  prevent.push(newArray[choice01])
+  console.log("prevent:", prevent);
   return choice1;
 }
 
@@ -270,10 +319,30 @@ function choiceB(){
   const choice02 = prompt(gradient.rainbow("Please do your second choice (number):   " ));
   console.log("");
 
-
   const choice2 = newArray[choice02];
+  prevent.push(newArray[choice02])
+  console.log("prevent:", prevent);
+
+  if ( prevent[0] !== prevent[1]){
   return choice2;
+  } 
+  else {
+    console.log("Please choose a different card than the first one! ");
+    prevent.splice(0);
+    choiceB();
+  }
 }
+
+// if(choiceA() === choiceB()){
+//   console.log("Please choose a different card than the first one! ");
+//   do{ 
+//     choiceB()}
+//     while (choiceA() !== choiceB())
+//   console.log("");
+// }
+// }
+
+// prevent();
 
 
 // if(choiceA() === choiceB()){
@@ -366,8 +435,6 @@ console.log("");
 /* return weiterSpielen() */
 }
 weiterSpielen()
-
-  
 
 // Weiterspielen - neues Spiel
 function neuesSpiel(){
