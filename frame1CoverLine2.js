@@ -11,7 +11,7 @@ function frame1CoverLine2(){
 
 let frameCL2 = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO                            I love memory!                             OO", 
+"OO  Level 1                   I love memory!                             OO", 
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                                                                       OO",
 "OO                                                                       OO",

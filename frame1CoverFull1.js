@@ -10,7 +10,7 @@ console.log();
 function frame1CoverFull1(){
 let frameCF = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO                        I love memory!                           OO", 
+"OO  Level 1               I love memory!                           OO", 
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                                                                 OO",
 "OO                                                                 OO",

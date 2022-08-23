@@ -81,6 +81,8 @@ console.clear()
   if (question === "n"){
       console.log(gradient.rainbow("What a pity!... 😦")); 
       console.log("");
+      // Wie beende ich hier den Prozess?
+    
     }
   }
 start()
@@ -101,37 +103,34 @@ console.log(header4);
 // // // Rahmen Frame1 Level 1
 console.log(); 
 
-let frame = gradient.rainbow.multiline([
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO  Level 1                 I love memory!                         OO", 
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO                                                                 OO",
-"OO                                                                 OO",
-].join('\n'));
-console.log(frame);
-
-  console.log
-  (gradient.rainbow("OO  "),"╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗",gradient.rainbow("  OO" ) );
+let frameCF = gradient.rainbow.multiline([
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  "OO  Level 1               I love memory!                           OO", 
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  "OO                                                                 OO",
+  "OO                                                                 OO",
+  ].join('\n'));
+  console.log(frameCF);
   
-  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
-  ("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║",gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
+  // Reihe 1
   
-  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
-  ("❤️ 0 ❤️"),"║","║", gradient.rainbow("❤️ 1 ❤️"), "║","║", gradient.rainbow("❤️ 2 ❤️"), "║","║",gradient.rainbow("❤️ 3 ❤️"), "║","║", gradient.rainbow("❤️ 4 ❤️"),"║","║", gradient.rainbow("❤️ 5 ❤️"), "║", gradient.rainbow("  OO") );
-  
-  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
-  ("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║",gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
-  
-  console.log
-  (gradient.rainbow("OO  "),"╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝",gradient.rainbow("  OO" ))
-  
-let frame0 = gradient.rainbow.multiline([
-"OO                                                                 OO",
-"OO                                                                 OO",
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-].join('\n'));
-console.log(frame0);
+  let  coverFull1 = gradient.rainbow.multiline([
+  "OO    ███████   ███████   ███████   ███████   ███████   ███████    OO",
+  "OO    ███████   ███████   ███████   ███████   ███████   ███████    OO",
+  "OO    ███████   ███████   ███████   ███████   ███████   ███████    OO",
+  "OO    ██  0 █   ██  1 █   ██  2 █   ██  3 █   ██  4 █   ██  5 █    OO",
+  "OO    ███████   ███████   ███████   ███████   ███████   ███████    OO",
+    
+    ].join('\n'));
+    console.log(coverFull1);
+   
+  let frame0CF = gradient.rainbow.multiline([
+  "OO                                                                 OO",
+  "OO                                                                 OO",
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  ].join('\n'));
+  console.log(frame0CF);
 
   
 
@@ -204,7 +203,6 @@ neueMischung()
 
 
 // Auswahl aus new Array
-
 
   function choiceA(){
     console.log("");
@@ -282,6 +280,7 @@ console.log("");
         pairs = [];
         console.log(gradient.rainbow("Needed choices: "), choiceCount);
         console.log("");
+        // wie kann ich direkt zu "neuesSpiel" gehen, wenn alle matches found?
       }
     }
 
@@ -315,6 +314,7 @@ function neuesSpiel(){
     console.log("");
       if (neuMischen === "y"){
          console.log(gradient.rainbow("Start again...  😉"));
+         // Wie kann ich hier ohne "Abruch" zu "Mischen" gehen?
       }
       if (neuMischen === "n"){
     console.log(gradient.rainbow("Have a nice day... Bye 🤚")); 

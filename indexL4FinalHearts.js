@@ -1,37 +1,118 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync({eot: true});
-import chalk from 'chalk';
 import gradient from 'gradient-string';
 
+// header 
 
-//face 
+console.log("");
+console.log("");
+console.log("");
+console.log(""); 
+
+// // header 1
+let header1 = gradient.rainbow.multiline([
+
+  "███╗   ███╗███████╗███╗   ███╗ ██████╗ ██████╗ ██╗   ██╗",
+  "████╗ ████║██╔════╝████╗ ████║██╔═══██╗██╔══██╗╚██╗ ██╔╝",
+  "██╔████╔██║█████╗  ██╔████╔██║██║   ██║██████╔╝ ╚████╔╝ ",
+  "██║╚██╔╝██║██╔══╝  ██║╚██╔╝██║██║   ██║██╔══██╗  ╚██╔╝  ",
+  "██║ ╚═╝ ██║███████╗██║ ╚═╝ ██║╚██████╔╝██║  ██║   ██║   ",
+  "╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ",
+  
+  ].join('\n'));
+  console.log(header1);
+
 
 console.log("");
 console.log("");
 
-/* function level3(){ */
+// // header 2
+console.log("");
+console.log("");
+
+let header2 = gradient.rainbow.multiline([
+  "███    ███  ███████  ███    ███   ██████   ██████   ██    ██ ",
+  "████  ████  ██       ████  ████  ██    ██  ██   ██   ██  ██  ",
+  "██ ████ ██  █████    ██ ████ ██  ██    ██  ██████     ████   ",
+  "██  ██  ██  ██       ██  ██  ██  ██    ██  ██   ██     ██    ",
+  "██      ██  ███████  ██      ██   ██████   ██   ██     ██    ",
+  ].join('\n'));
+  console.log(header2);
+
+console.log("");
+console.log("");
+
+// // header 3
+
+  console.log("");
+  console.log("");
+
+  let header3 = gradient.rainbow.multiline([
+  "╔═╗     ╔═╗ ╔══════╗ ╔═╗     ╔═╗  ╔═════╗  ╔═════╗  ╔═╗   ╔═╗",
+  "║ ╚═╗ ╔═╝ ║ ║ ╔════╝ ║ ╚═╗ ╔═╝ ║ ╔╝╔═══╗╚╗ ║ ╔══╗╚╗ ╚╗╚╗ ╔╝╔╝",
+  "║ ╔╗╚═╝╔╗ ║ ║ ╚══╗   ║ ╔╗╚═╝╔╗ ║ ║ ║   ║ ║ ║ ╚══╝╔╝  ╚╗╚═╝╔╝ ",
+  "║ ║╚╗ ╔╝║ ║ ║ ╔══╝   ║ ║╚╗ ╔╝║ ║ ║ ║   ║ ║ ║ ╔══╗╚╗   ╚╗ ╔╝  ",
+  "║ ║ ╚═╝ ║ ║ ║ ╚════╗ ║ ║ ╚═╝ ║ ║ ╚╗╚═══╝╔╝ ║ ║  ║ ║    ║ ║   ",
+  "╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═╝  ╚═╝    ╚═╝   ",
+
+  ].join('\n'));
+  console.log(header3);
+
+console.log("");
+console.log(""); 
+
+// Erste Frage
+
+function start(){
+const question = prompt("Do you want to play memory with me? (y/n)  ").toLowerCase();
+  console.log("");
+  console.log(""); 
+console.clear()
+  console.log(""); 
+  console.log("");
+
+
+  if ( question === "y"){
+    console.log(gradient.rainbow("Great! 😃  Let's get started then...")); 
+    console.log(" ");
+    console.log("");
+
+  }
+  if (question === "n"){
+      console.log(gradient.rainbow("What a pity!... 😦")); 
+      console.log("");
+      // Wie beende ich hier den Prozess?
+    
+    }
+  }
+start()
+
+
+// Display 
+
+console.log("");
+console.log("");
 
 
 let header4 = gradient.rainbow.multiline([
-"           )))           +++           &&&           xxx           (((     ",
-"          (o o)         (o o)         (o o)         (o o)         (o o)    ",
-"      ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo",
+"     )))           +++           &&&           xxx           (((     ",
+"    (o o)         (o o)         (o o)         (o o)         (o o)    ",
+"ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo",
 ].join('\n'));
 console.log(header4);
 
 
-// // // Rahmen  Level 3
+// // // Rahmen  Level 4
 console.log(); 
-/* console.log(); */
+
 let frame = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO  Level 3                      I love memory!                                OO", 
+"OO  Level 4                      I love memory!                                OO", 
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                                                                             OO",
 "OO                                                                             OO",
 ].join('\n'));
 console.log(frame);
-
 // Reihe 1
   console.log
   (gradient.rainbow("OO  "),"╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗",gradient.rainbow("  OO" ) );
@@ -97,6 +178,28 @@ console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
 
 console.log
 (gradient.rainbow("OO  "),"╚═════════╝","╚═════════╝","╚═════════╝","╚═════════╝", "╚═════════╝", "╚═════════╝",gradient.rainbow("  OO" ));
+
+  // Reihe 4
+  console.log
+  (gradient.rainbow("OO  "),"╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗",gradient.rainbow("  OO" ) );
+  
+  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+  ("❤️ ❤️ ❤️ ❤️"),"║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║",gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"),"║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
+  
+  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+  ("❤️     ❤️"),"║","║", gradient.rainbow ("❤️     ❤️"), "║","║", gradient.rainbow ("❤️     ❤️"), "║","║",gradient.rainbow ("❤️     ❤️"), "║","║", gradient.rainbow ("❤️     ❤️"),"║","║", gradient.rainbow ("❤️     ❤️"), "║", gradient.rainbow("  OO") );
+  
+  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+  ("❤️ 1 8 ❤️"),"║","║", gradient.rainbow ("❤️ 1 9 ❤️"), "║","║", gradient.rainbow ("❤️ 2 0 ❤️"), "║","║",gradient.rainbow ("❤️ 2 1 ❤️"), "║","║", gradient.rainbow ("❤️ 2 2 ❤️"),"║","║", gradient.rainbow ("❤️ 2 3 ❤️"), "║", gradient.rainbow("  OO") );
+  
+  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+  ("❤️     ❤️"),"║","║", gradient.rainbow ("❤️     ❤️"), "║","║", gradient.rainbow ("❤️     ❤️"), "║","║",gradient.rainbow ("❤️     ❤️"), "║","║", gradient.rainbow ("❤️     ❤️"),"║","║", gradient.rainbow ("❤️     ❤️"), "║", gradient.rainbow("  OO") );
+  
+  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+  ("❤️ ❤️ ❤️ ❤️"),"║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║",gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"),"║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
+  
+  console.log
+  (gradient.rainbow("OO  "),"╚═════════╝","╚═════════╝","╚═════════╝","╚═════════╝", "╚═════════╝", "╚═════════╝",gradient.rainbow("  OO" ));
   
 let frame0 = gradient.rainbow.multiline([
 "OO                                                                             OO",
@@ -106,11 +209,10 @@ let frame0 = gradient.rainbow.multiline([
 ].join('\n'));
 console.log(frame0);
   
-  console.log("                                                          ");
-  console.log("                                                          ");
+console.log("");
+console.log("");
 
-
-// Array of Objects Level 3
+// Array of Objects Level 4
 const testArray = [
   {
     name: "clock1",
@@ -202,7 +304,38 @@ const testArray = [
     pic: "🏃 ",
     // id: 18,
   },
+  {
+    name: "moon1",
+    pic: "🌒  ",
+    // id: 19,
+  },
+  {
+    name: "moon2",
+    pic: "🌒  ",
+    // id: 20,
+  },
+  {
+    name: "thunderstorm1",
+    pic: "⛈ ",
+    // id: 21,
+  },
+  {
+    name: "thunderstorm2",
+    pic: "⛈ ",
+    // id: 22,
+  },
+  {
+    name: "flash1",
+    pic: "💥 ",
+    // id: 23,
+  },
+  {
+    name: "flash",
+    pic: "💥 ",
+    // id: 24,
+  }
 ]
+
 
 let newTestArray = []
 
@@ -374,4 +507,5 @@ function neuesSpiel(){
     false
   }
 }
+
 

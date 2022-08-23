@@ -10,7 +10,7 @@ console.log();
 function frame1(){
 let frame = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO                         I love memory!                          OO", 
+"OO  Level 1                I love memory!                          OO", 
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO                                                                 OO",
 "OO                                                                 OO",

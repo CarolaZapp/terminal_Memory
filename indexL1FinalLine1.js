@@ -1,24 +1,15 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync({eot: true});
-import chalk from 'chalk';
 import gradient from 'gradient-string';
-/* import level2 from './level2.js'; */
-import frame1 from './frame1.js'
-import frame1CoverFull1 from './frame1CoverFull1.js';
-import frame1CoverFull2 from './frame1CoverFull2.js';
-import frame1CoverLine1 from './frame1CoverLine1.js';
-import frame1CoverLine2 from './frame1CoverLine2.js';
-import frame1CoverLine3 from './frame1CoverLine3.js';
-console.clear();
 
-// header
+// header 
 
 console.log("");
 console.log("");
 console.log("");
 console.log(""); 
 
-
+// // header 1
 let header1 = gradient.rainbow.multiline([
 
   "███╗   ███╗███████╗███╗   ███╗ ██████╗ ██████╗ ██╗   ██╗",
@@ -35,7 +26,7 @@ let header1 = gradient.rainbow.multiline([
 console.log("");
 console.log("");
 
-// // //
+// // header 2
 console.log("");
 console.log("");
 
@@ -51,7 +42,7 @@ let header2 = gradient.rainbow.multiline([
 console.log("");
 console.log("");
 
-  // // //
+// // header 3
 
   console.log("");
   console.log("");
@@ -70,7 +61,8 @@ console.log("");
 console.log("");
 console.log(""); 
 
-// Frage
+// Erste Frage
+
 function start(){
 const question = prompt("Do you want to play memory with me? (y/n)  ").toLowerCase();
   console.log("");
@@ -84,11 +76,13 @@ console.clear()
     console.log(gradient.rainbow("Great! 😃  Let's get started then...")); 
     console.log(" ");
     console.log("");
+
   }
   if (question === "n"){
       console.log(gradient.rainbow("What a pity!... 😦")); 
       console.log("");
-      return 
+      // Wie beende ich hier den Prozess?
+    
     }
   }
 start()
@@ -98,48 +92,44 @@ start()
 console.log("");
 console.log("");
 
-let header4 = gradient.rainbow.multiline([
-"     )))           +++           &&&           xxx           (((     ",
-"    (o o)         (o o)         (o o)         (o o)         (o o)    ",
-"ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo",
-].join('\n'));
-console.log(header4);
-
-
-// // // Rahmen Frame1 Level 1
-console.log(); 
-
-let frame = gradient.rainbow.multiline([
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO  Level 1          I love memory!                                OO", 
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO                                                                 OO",
-"OO                                                                 OO",
-].join('\n'));
-console.log(frame);
-
-  console.log
-  (gradient.rainbow("OO  "),"╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗",gradient.rainbow("  OO" ) );
+let frameCL1 = gradient.rainbow.multiline([
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  "OO  Level 1                   I love memory!                             OO", 
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  "OO                                                                       OO",
+  "OO                                                                       OO",
+  ].join('\n'));
+  console.log(frameCL1);
   
-  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
-  ("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║",gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
+  // Reihe 1
   
-  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
-  ("❤️ 0 ❤️"),"║","║", gradient.rainbow("❤️ 1 ❤️"), "║","║", gradient.rainbow("❤️ 2 ❤️"), "║","║",gradient.rainbow("❤️ 3 ❤️"), "║","║", gradient.rainbow("❤️ 4 ❤️"),"║","║", gradient.rainbow("❤️ 5 ❤️"), "║", gradient.rainbow("  OO") );
+    console.log
+    (gradient.rainbow("OO  "), gradient.rainbow("╔═══╗═══╗ "), gradient.rainbow("╔═══╗═══╗ "), gradient.rainbow("╔═══╗═══╗ "), gradient.rainbow("╔═══╗═══╗ "), gradient.rainbow("╔═══╗═══╗ "), gradient.rainbow("╔═══╗═══╗ "), gradient.rainbow("  OO" ));
   
-  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
-  ("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║",gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
+    console.log
+    (gradient.rainbow("OO  "), gradient.rainbow("║═╗ ╚╗  ║ "), gradient.rainbow("║═╗ ╚╗  ║ "), gradient.rainbow("║═╗ ╚╗  ║ "), gradient.rainbow("║═╗ ╚╗  ║ "), gradient.rainbow("║═╗ ╚╗  ║ "), gradient.rainbow("║═╗ ╚╗  ║ "), gradient.rainbow("  OO" ));
+    console.log
   
-  console.log
-  (gradient.rainbow("OO  "),"╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝",gradient.rainbow("  OO" ));
+    (gradient.rainbow("OO  "), gradient.rainbow("║ ╚╗ ╚╗ ║ "), gradient.rainbow("║ ╚╗ ╚╗ ║ "), gradient.rainbow("║ ╚╗ ╚╗ ║ "), gradient.rainbow("║ ╚╗ ╚╗ ║ "), gradient.rainbow("║ ╚╗ ╚╗ ║ "), gradient.rainbow("║ ╚╗ ╚╗ ║ "), gradient.rainbow("  OO" ));
+    console.log
   
-let frame0 = gradient.rainbow.multiline([
-"OO                                                                 OO",
-"OO                                                                 OO",
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-].join('\n'));
-console.log(frame0);
+    (gradient.rainbow("OO  "), gradient.rainbow("║  ╚╗ ╚╗║ "), gradient.rainbow("║  ╚╗ ╚╗║ "), gradient.rainbow("║  ╚╗ ╚╗║ "), gradient.rainbow("║  ╚╗ ╚╗║ "), gradient.rainbow("║  ╚╗ ╚╗║ "), gradient.rainbow("║  ╚╗ ╚╗║ "), gradient.rainbow("  OO" ));
+    console.log
+  
+    (gradient.rainbow("OO  "), gradient.rainbow("║  0╚╗ ╚║ "), gradient.rainbow("║  1╚╗ ╚║ "), gradient.rainbow("║  2╚╗ ╚║ "), gradient.rainbow("║  3╚╗ ╚║ "), gradient.rainbow("║  4╚╗ ╚║ "), gradient.rainbow("║  5╚╗ ╚║ "), gradient.rainbow("  OO" ));
+    
+    console.log
+    (gradient.rainbow("OO  "), gradient.rainbow("╚════╝══╝ "), gradient.rainbow("╚════╝══╝ "), gradient.rainbow("╚════╝══╝ "), gradient.rainbow("╚════╝══╝ "), gradient.rainbow("╚════╝══╝ "), gradient.rainbow("╚════╝══╝ "), gradient.rainbow("  OO" ));
+  
+    
+  let frame0CL1 = gradient.rainbow.multiline([
+  "OO                                                                       OO",
+  "OO                                                                       OO",
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  
+  ].join('\n'));
+  console.log(frame0CL1);
 
   
 
@@ -289,7 +279,7 @@ console.log("");
         pairs = [];
         console.log(gradient.rainbow("Needed choices: "), choiceCount);
         console.log("");
-        /* neuesSpiel();  */   
+        // wie kann ich direkt zu "neuesSpiel" gehen, wenn alle matches found?
       }
     }
 
@@ -313,7 +303,6 @@ console.log("");
     console.log("");
     neuesSpiel();
   }
-/* return weiterSpielen() */
 }
 weiterSpielen();
 
@@ -324,6 +313,7 @@ function neuesSpiel(){
     console.log("");
       if (neuMischen === "y"){
          console.log(gradient.rainbow("Start again...  😉"));
+         // Wie kann ich hier ohne "Abruch" zu "Mischen" gehen?
       }
       if (neuMischen === "n"){
     console.log(gradient.rainbow("Have a nice day... Bye 🤚")); 
