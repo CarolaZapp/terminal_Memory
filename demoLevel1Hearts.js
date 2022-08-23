@@ -60,8 +60,8 @@ let frame0 = gradient.rainbow.multiline([
 ].join('\n'));
 console.log(frame0);
   
-  console.log("                                                          ");
-  console.log("                                                          ");
+  console.log("");
+  console.log("");
 
   // Array of Objects Level 2
 const testArray = [

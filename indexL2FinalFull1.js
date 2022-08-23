@@ -75,13 +75,13 @@ console.clear()
   if ( question === "y"){
     console.log(gradient.rainbow("Great! 😃  Let's get started then...")); 
     console.log(" ");
-    console.log("");
+
 
   }
   if (question === "n"){
       console.log(gradient.rainbow("What a pity!... 😦")); 
       console.log("");
-      // Wie beende ich hier den Prozess?
+      process.exit()
     
     }
   }

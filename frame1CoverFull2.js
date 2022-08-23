@@ -6,7 +6,7 @@ import gradient from 'gradient-string';
 // // // Rahmen  Level 1 Deckblatt coverFull2
 console.log(); 
 console.log(); 
-function frame1CoverFull2(){
+/* function frame1CoverFull2(){ */
 let frameCF2 = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO  Level 1                  I love memory!                           OO", 
@@ -41,7 +41,8 @@ let frame0CF2 = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 ].join('\n'));
 console.log(frame0CF2);
+console.log("");
 
-}
+/* }
 
-  export default frame1CoverFull2;
+  export default frame1CoverFull2; */

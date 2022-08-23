@@ -1,55 +1,12 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync({eot: true});
-
 import gradient from 'gradient-string';
-
-// // // Rahmen  Level 1 Deckblatt Hearts
-console.log(); 
-console.log(); 
-
-console.log(gradient.rainbow("Number 1: Cover Hearts", frame1()));
-console.log(""); 
-
-function frame1(){
-let frame = gradient.rainbow.multiline([
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO  Level 1                 I love memory!                         OO", 
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OO                                                                 OO",
-"OO                                                                 OO",
-].join('\n'));
-console.log(frame);
-
-  console.log
-  (gradient.rainbow("OO  "),"╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗","╔═══════╗",gradient.rainbow("  OO" ) );
-  
-  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
-  ("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║",gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
-  
-  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
-  ("❤️ 0 ❤️"),"║","║", gradient.rainbow("❤️ 1 ❤️"), "║","║", gradient.rainbow("❤️ 2 ❤️"), "║","║",gradient.rainbow("❤️ 3 ❤️"), "║","║", gradient.rainbow("❤️ 4 ❤️"),"║","║", gradient.rainbow("❤️ 5 ❤️"), "║", gradient.rainbow("  OO") );
-  
-  console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
-  ("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║","║",gradient.rainbow("❤️ ❤️ ❤️"), "║","║", gradient.rainbow("❤️ ❤️ ❤️"),"║","║", gradient.rainbow("❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
-  
-  console.log
-  (gradient.rainbow("OO  "),"╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝","╚═══════╝",gradient.rainbow("  OO" ));
-  
-let frame0 = gradient.rainbow.multiline([
-"OO                                                                 OO",
-"OO                                                                 OO",
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-].join('\n'));
-console.log(frame0);
-console.log(""); 
-}
 
 // // // Rahmen  Level 1 Deckblatt coverFull 1
 console.log(); 
 console.log(); 
 
-console.log(gradient.rainbow("Number 2: Cover FullColor", frame1CoverFull1()));
+console.log(gradient.rainbow("Number 1: Cover Full Color", frame1CoverFull1()));
 console.log(""); 
 
 function frame1CoverFull1(){
@@ -89,7 +46,7 @@ console.log("");
 console.log(); 
 console.log();
 
-console.log(gradient.rainbow("Number 3: Cover Rainbow", frame1CoverFull2()));
+console.log(gradient.rainbow("Number 2: Cover Rainbow", frame1CoverFull2()));
 console.log(""); 
 
 function frame1CoverFull2(){
@@ -130,12 +87,11 @@ console.log(frame0CF2);
 console.log("");
 }
 
-
 // // // Rahmen  Level 1 Deckblatt coverLine 1
 console.log(); 
 console.log();
 
-console.log(gradient.rainbow("Number 4: Cover Line 1", frame1CoverLine1()));
+console.log(gradient.rainbow("Number 3: Cover Line 1", frame1CoverLine1()));
 console.log(""); 
 
 function frame1CoverLine1(){
@@ -186,7 +142,7 @@ console.log();
 console.log();
 
 
-console.log(gradient.rainbow("Number 5: Cover Line 2", frame1CoverLine2()));
+console.log(gradient.rainbow("Number 4: Cover Line 2", frame1CoverLine2()));
 console.log(""); 
 
 function frame1CoverLine2(){
@@ -237,7 +193,7 @@ console.log("");
 console.log(); 
 console.log();
 
-console.log(gradient.rainbow("Number 6: Cover Line 3", frame1CoverLine3()));
+console.log(gradient.rainbow("Number 5: Cover Line 3", frame1CoverLine3()));
 console.log(""); 
 
 function frame1CoverLine3(){
@@ -282,4 +238,53 @@ let frame0CL3 = gradient.rainbow.multiline([
 ].join('\n'));
 console.log(frame0CL3);
 console.log("");
+}
+
+// // // Rahmen  Level 1 Deckblatt Hearts
+console.log(); 
+console.log(); 
+
+console.log(gradient.rainbow("Number 6: Cover Hearts", frame1CoverHearts()));
+console.log(""); 
+
+function frame1CoverHearts(){
+let frame = gradient.rainbow.multiline([
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  "OO  Level 1                      I love memory!                                OO", 
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  "OO                                                                             OO",
+  "OO                                                                             OO",
+  ].join('\n'));
+  console.log(frame);
+  
+  // Reihe 1
+    console.log
+    (gradient.rainbow("OO  "),"╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗","╔═════════╗",gradient.rainbow("  OO" ) );
+    
+    console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+    ("❤️ ❤️ ❤️ ❤️"),"║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║",gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"),"║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
+  
+    console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+    ("❤️     ❤️"),"║","║", gradient.rainbow ("❤️     ❤️"), "║","║", gradient.rainbow ("❤️     ❤️"), "║","║",gradient.rainbow ("❤️     ❤️"), "║","║", gradient.rainbow ("❤️     ❤️"),"║","║", gradient.rainbow ("❤️     ❤️"), "║", gradient.rainbow("  OO") );
+    
+    console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+    ("❤️   0 ❤️"),"║","║", gradient.rainbow ("❤️   1 ❤️"), "║","║", gradient.rainbow ("❤️   2 ❤️"), "║","║",gradient.rainbow ("❤️   3 ❤️"), "║","║", gradient.rainbow ("❤️   4 ❤️"),"║","║", gradient.rainbow ("❤️   5 ❤️"), "║", gradient.rainbow("  OO") );
+    
+    console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+    ("❤️     ❤️"),"║","║", gradient.rainbow ("❤️     ❤️"), "║","║", gradient.rainbow ("❤️     ❤️"), "║","║",gradient.rainbow ("❤️     ❤️"), "║","║", gradient.rainbow ("❤️     ❤️"),"║","║", gradient.rainbow ("❤️     ❤️"), "║", gradient.rainbow("  OO") );
+  
+    console.log(gradient.rainbow("OO  "),"║", gradient.rainbow
+    ("❤️ ❤️ ❤️ ❤️"),"║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║",gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"),"║","║", gradient.rainbow ("❤️ ❤️ ❤️ ❤️"), "║", gradient.rainbow("  OO") );
+    
+    console.log
+    (gradient.rainbow("OO  "),"╚═════════╝","╚═════════╝","╚═════════╝","╚═════════╝", "╚═════════╝", "╚═════════╝",gradient.rainbow("  OO" ));
+    
+  let frame0 = gradient.rainbow.multiline([
+  "OO                                                                             OO",
+  "OO                                                                             OO",
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+  ].join('\n'));
+  console.log(frame0);
+  console.log("");
 }

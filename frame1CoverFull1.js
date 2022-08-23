@@ -7,7 +7,7 @@ import gradient from 'gradient-string';
 console.log(); 
 console.log(); 
 
-function frame1CoverFull1(){
+/* function frame1CoverFull1(){ */
 let frameCF = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 "OO  Level 1               I love memory!                           OO", 
@@ -36,6 +36,7 @@ let frame0CF = gradient.rainbow.multiline([
 "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
 ].join('\n'));
 console.log(frame0CF);
-}
+console.log("");
+/* }
 
-export default frame1CoverFull1;
+export default frame1CoverFull1; */

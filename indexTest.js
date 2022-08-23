@@ -89,7 +89,7 @@ console.clear()
   if (question === "n"){
       console.log(gradient.rainbow("What a pity!... 😦")); 
       console.log("");
-      
+      process.exit()
     }
   }
 start()
