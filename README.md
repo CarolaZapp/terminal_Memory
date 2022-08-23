@@ -36,15 +36,28 @@ The aim of the game is to find all the pairs in as few moves as possible.
 #### => therefore no public version available
 
 #### To install and use the game following steps must be done:
-1. Copy the code at github and ('git clone') the adress at your terminal
-2. Choose ('cd') the file ('terminal_Memory/ ')
-
-
-
-#
-##### Links used during development :
-https://github.com/heapwolf/prompt-sync#readme
+1. Copy the code at github and `git clone` the adress at your terminal
+2. Choose `cd` the file `terminal_Memory/`
+3. Open, for example Visual Studio Code, with `code .`
+4. Initialise npm in your project folder with `npm init -y`.
+5. Install the npm packages `prompt-sync` in the project folder with `npm install prompt-sync`.
+   https://github.com/heapwolf/prompt-sync#readme
+6. Add the property `"type": "module"` to package.json. For example
+  {
+    "type": "module",
+    "name": "prompt-chalk-test",
+    "version": "1.0.0",
+##
+##### This game based on :
+javascript, node as well as packages:
+* https://github.com/heapwolf/prompt-sync#readme
 => used for prompt action
-https://www.npmjs.com/package/gradient-string
+* https://www.npmjs.com/package/gradient-string
 => used for gradient rainbow color
+* https://github.com/patorjk/figlet.js#readme 
+=> lettering and inspiration
+* https://github.com/sindresorhus/cli-spinners
+=> pair items
+
+made with ❤️ and passion by Carola Zapp, 08.2022
 
